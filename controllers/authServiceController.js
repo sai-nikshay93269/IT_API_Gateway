@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const router = express.Router();
 
-const BASE_URL = 'http://localhost:5001/api/auth';
+const BASE_URL = 'http://host.docker.internal:5001/api/auth';
 
 // Register a new user
 router.post('/register', (req, res) => {

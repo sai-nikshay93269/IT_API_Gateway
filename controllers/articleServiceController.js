@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const router = express.Router();
 
-const BASE_URL = 'http://localhost:5003/api/articles';
+const BASE_URL = 'http://host.docker.internal:5003/api/articles';
 
 // Create a new article
 router.post('/', (req, res) => {

@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const router = express.Router();
 
-const BASE_URL = 'http://localhost:5002/api/tickets';
+const BASE_URL = 'http://host.docker.internal:5002/api/tickets';
 
 // Create a new ticket
 router.post('/', (req, res) => {

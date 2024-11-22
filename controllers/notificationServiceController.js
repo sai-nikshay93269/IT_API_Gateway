@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const router = express.Router();
 
-const BASE_URL = 'http://localhost:5004/api/notifications';
+const BASE_URL = 'http://host.docker.internal:5004/api/notifications';
 
 router.post('/', (req, res) => {
   axios.post(`${BASE_URL}`, req.body, {
